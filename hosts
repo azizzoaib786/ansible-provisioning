@@ -1,0 +1,9 @@
+[docker]
+aws-devbox-fastlane-dev-docker
+aws-devbox-fastlane-stage-docker
+aws-devbox-fastlane-docker
+
+[docker-swarm-master]
+aws-devbox-fastlane-dev-docker
+aws-devbox-fastlane-stage-docker
+aws-devbox-fastlane-docker
