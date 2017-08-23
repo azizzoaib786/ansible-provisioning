@@ -1,9 +1,10 @@
 [docker]
 aws-devbox-fastlane-dev-docker
 aws-devbox-fastlane-stage-docker
-aws-devbox-fastlane-docker
+aws-devbox-fastlane-docker01
+aws-devbox-fastlane-docker02
 
 [docker-swarm-master]
 aws-devbox-fastlane-dev-docker
 aws-devbox-fastlane-stage-docker
-aws-devbox-fastlane-docker
+aws-devbox-fastlane-docker01
