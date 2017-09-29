@@ -1,10 +1,10 @@
 [docker]
-aws-devbox-fastlane-dev-docker
-aws-devbox-fastlane-stage-docker
-aws-devbox-fastlane-docker01
-aws-devbox-fastlane-docker02
+docker01.fastlane-dev.fidor.cloud
+docker01.fastlane-stage.fidor.cloud
+docker01.fastlane.fidor.cloud
+docker02.fastlane.fidor.cloud
 
 [docker-swarm-master]
-aws-devbox-fastlane-dev-docker
-aws-devbox-fastlane-stage-docker
-aws-devbox-fastlane-docker01
+docker01.fastlane-dev.fidor.cloud
+docker01.fastlane-stage.fidor.cloud
+docker01.fastlane.fidor.cloud
