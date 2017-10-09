@@ -1,18 +1,12 @@
-- name: Docker systemd unit
-  template:
-    src: templates/systemd-docker-service.j2
-    dest: /usr/lib/systemd/system/docker.service
-  register: dockerconfig
+- name: Configure docker service
+  copy:
+    dest: /etc/docker/daemon.json
+    content: '{ "insecure-registries" : [ "docker-prod.fidor.intern:5000" ] }'
+  register: daemon_json
 
-- name: Docker sysconfig
-  template:
-    src: templates/sysconfig-docker.j2
-    dest: /etc/sysconfig/docker
-  register: dockerconfig
-
-- name: Docker reload
+- name: Enable and start docker service
   systemd:
-    state: restarted
-    daemon_reload: yes
     name: docker
-  when: dockerconfig.changed
+    state: restarted
+    enabled: yes
+  when: daemon_json.changed
