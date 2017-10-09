@@ -1,0 +1,21 @@
+- name: Add docker YUM repo
+  yum_repository:
+    name: docker-main-repo
+    description: Docker main Repository
+    baseurl: https://yum.dockerproject.org/repo/main/centos/7
+    gpgkey: https://yum.dockerproject.org/gpg
+
+- name: Install docker package
+  yum:
+    name: docker-engine-17.05.0.ce-1.el7.centos
+    state: present
+
+- name: Enable docker service
+  systemd:
+    name: docker
+    state: started
+
+- name: Add centos user to docker group
+  user:
+    name: centos
+    groups: docker

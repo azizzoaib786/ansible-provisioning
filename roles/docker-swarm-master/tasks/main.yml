@@ -1,0 +1,4 @@
+- name: Init docker swarm
+  command: docker swarm init
+  args:
+    creates: /var/lib/docker/swarm/state.json

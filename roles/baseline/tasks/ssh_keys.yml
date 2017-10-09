@@ -1,0 +1,16 @@
+- name: Add authorized key to centos user
+  authorized_key:
+    user: centos
+    key: "{{ item }}"
+    state: present
+  with_file:
+    - files/ssh/public_keys/jenkins
+    - files/ssh/public_keys/meyer
+    - files/ssh/public_keys/neumayr
+
+- name: Add private key to centos user
+  copy:
+    src: ssh/private_keys/id_rsa
+    dest: /home/centos/.ssh/id_rsa
+    mode: 0600
+    owner: centos

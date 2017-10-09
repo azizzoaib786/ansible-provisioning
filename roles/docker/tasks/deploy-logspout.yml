@@ -1,0 +1,13 @@
+- name: Install Docker PY
+  pip: name=docker
+
+- name: Start logspout container
+  docker_container:
+    name: logspout
+    image: mdsol/logspout
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock
+    restart_policy: always
+    tty: true
+    hostname: '{{inventory_hostname}}'
+    command: cloudwatch://auto

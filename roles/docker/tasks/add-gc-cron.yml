@@ -1,0 +1,7 @@
+- name: Create docker cleanup cronjob
+  cron:
+    name: "docker system prune"
+    user: "centos"
+    minute: "0"
+    hour: "8,10,12,14,16,18,20"
+    job: "docker system prune -af > /dev/null"
