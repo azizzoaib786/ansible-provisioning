@@ -2,12 +2,12 @@
   yum_repository:
     name: docker-main-repo
     description: Docker main Repository
-    baseurl: https://yum.dockerproject.org/repo/main/centos/7
-    gpgkey: https://yum.dockerproject.org/gpg
+    baseurl: https://download.docker.com/linux/centos/7/x86_64/stable
+    gpgkey: https://download.docker.com/linux/centos/gpg
 
 - name: Install docker package
   yum:
-    name: docker-engine-17.05.0.ce-1.el7.centos
+    name: docker-ce-17.12.0.ce-1.el7.centos
     state: present
 
 - name: Enable docker service
