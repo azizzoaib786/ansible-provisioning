@@ -4,11 +4,13 @@
     key: "{{ item }}"
     state: present
   with_file:
+    - files/ssh/public_keys/fagoaga
     - files/ssh/public_keys/faltin
     - files/ssh/public_keys/jenkins
     - files/ssh/public_keys/kobara
     - files/ssh/public_keys/meyer
     - files/ssh/public_keys/neumayr
+    - files/ssh/public_keys/romagosa
 
 - name: Add private key to centos user
   copy:
