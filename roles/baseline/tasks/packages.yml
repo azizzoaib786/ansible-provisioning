@@ -5,9 +5,10 @@
   with_items:
     - bind-utils
     - epel-release
+    - git
     - htop
     - ncdu
-    - tmux
-    - vim
-    - git
     - python-pip
+    - tmux
+    - tree
+    - vim

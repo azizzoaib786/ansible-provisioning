@@ -1,0 +1,30 @@
+- name: Install NFS packages
+  package:
+    name: nfs-utils
+    state: present
+
+- name: Create mountpoint
+  file:
+    path: /mnt/nfs
+    state: directory
+    owner: centos
+    group: centos
+
+- name: Mount NFS
+  mount:
+    name: /mnt/nfs
+    src: fs-dd11e484.efs.eu-central-1.amazonaws.com:/
+    fstype: nfs
+    opts: nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2
+    state: mounted
+
+- name: Create subfolders on NFS
+  file:
+    name: "/mnt/nfs/{{item}}/banking/private"
+    state: directory
+    owner: centos
+    group: centos
+  with_items:
+    - dev
+    - stage
+    - acceptance
