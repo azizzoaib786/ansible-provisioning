@@ -1,4 +1,5 @@
 - import_tasks: install-docker.yml
+- import_tasks: install-dtools.yml
 - import_tasks: configure-registry.yml
 - import_tasks: deploy-logspout.yml
 - import_tasks: add-gc-cron.yml
