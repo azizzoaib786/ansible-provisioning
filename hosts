@@ -14,3 +14,6 @@ docker01.fastlane-dev.fidor.cloud
 docker01.fastlane-stage.fidor.cloud
 docker01.fastlane.fidor.cloud
 docker02.fastlane.fidor.cloud
+
+[other]
+monitoring01.fastlane.fidor.cloud
