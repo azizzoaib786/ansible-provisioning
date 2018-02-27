@@ -1,6 +1,7 @@
 [docker]
 docker01.fastlane-dev.fidor.cloud
 docker01.fastlane-stage.fidor.cloud
+docker02.fastlane-stage.fidor.cloud
 docker01.fastlane.fidor.cloud
 docker02.fastlane.fidor.cloud
 
@@ -12,6 +13,7 @@ docker01.fastlane.fidor.cloud
 [nfs-client]
 docker01.fastlane-dev.fidor.cloud
 docker01.fastlane-stage.fidor.cloud
+docker02.fastlane-stage.fidor.cloud
 docker01.fastlane.fidor.cloud
 docker02.fastlane.fidor.cloud
 
