@@ -4,6 +4,7 @@
     key: "{{ item }}"
     state: present
   with_file:
+    - files/ssh/public_keys/bueno
     - files/ssh/public_keys/fagoaga
     - files/ssh/public_keys/faltin
     - files/ssh/public_keys/jenkins
