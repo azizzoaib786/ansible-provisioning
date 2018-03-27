@@ -9,6 +9,7 @@
     - files/ssh/public_keys/faltin
     - files/ssh/public_keys/jenkins
     - files/ssh/public_keys/kobara
+    - files/ssh/public_keys/marjanovic
     - files/ssh/public_keys/meyer
     - files/ssh/public_keys/neumayr
     - files/ssh/public_keys/romagosa
