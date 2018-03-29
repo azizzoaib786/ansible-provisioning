@@ -16,6 +16,12 @@
   roles:
     - docker-swarm-master
 
+- name: MySQL Server
+  hosts: mysql
+  become: yes
+  roles:
+    - mysql
+
 - name: NFS Client
   hosts: nfs-client
   become: yes

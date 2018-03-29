@@ -1,0 +1,28 @@
+databases:
+  - dev_adapter
+  - dev_auth_service
+  - dev_banking
+  - dev_backoffice
+  - dev_bancos_mock
+  - dev_comm_adapter
+  - dev_idnow_mock
+  - dev_onboarding
+
+  - stg_adapter
+  - stg_auth_service
+  - stg_banking
+  - stg_backoffice
+  - stg_bancos_mock
+  - stg_comm_adapter
+  - stg_idnow_mock
+  - stg_onboarding
+
+  - acc_adapter
+  - acc_auth_service
+  - acc_banking
+  - acc_backoffice
+  - acc_bancos_mock
+  - acc_comm_adapter
+  - acc_idnow_mock
+  - acc_onboarding
+database_password: Nah9iogae8aech4a

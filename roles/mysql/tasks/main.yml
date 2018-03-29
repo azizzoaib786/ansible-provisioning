@@ -1,0 +1,28 @@
+- name: Install package
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - mariadb-server
+    - MySQL-python
+
+- name: Enable service
+  systemd:
+    name: mariadb
+    enabled: true
+    state: started
+
+- name: Setup databases
+  mysql_db:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ databases }}"
+
+- name: Setup users
+  mysql_user:
+    name: "{{ item }}"
+    host: "%"
+    password: "{{ database_password }}"
+    priv: "{{ item }}.*:ALL"
+    state: present
+  with_items: "{{ databases }}"
