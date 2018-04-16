@@ -18,6 +18,15 @@
     state: present
   with_items: "{{ databases }}"
 
+
+- name: Setup autotest user
+  mysql_user:
+    name: autotest
+    host: "%"
+    password: "{{ database_password }}"
+    priv: "*.*:ALL"
+    state: present
+
 - name: Setup users
   mysql_user:
     name: "{{ item }}"
