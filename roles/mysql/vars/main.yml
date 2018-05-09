@@ -7,6 +7,7 @@ databases:
   - dev_comm_adapter
   - dev_idnow_mock
   - dev_onboarding
+  - dev_seed_service
 
   - stg_adapter
   - stg_auth_service
@@ -16,6 +17,7 @@ databases:
   - stg_comm_adapter
   - stg_idnow_mock
   - stg_onboarding
+  - stg_seed_service
 
   - acc_adapter
   - acc_auth_service
@@ -25,4 +27,5 @@ databases:
   - acc_comm_adapter
   - acc_idnow_mock
   - acc_onboarding
+  - acc_seed_service
 database_password: Nah9iogae8aech4a
