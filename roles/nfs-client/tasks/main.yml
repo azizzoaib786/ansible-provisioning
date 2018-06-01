@@ -18,9 +18,20 @@
     opts: nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2
     state: mounted
 
-- name: Create subfolders on NFS
+- name: Create banking subfolders on NFS
   file:
     name: "/mnt/nfs/{{item}}/banking/private"
+    state: directory
+    owner: centos
+    group: centos
+  with_items:
+    - dev
+    - stage
+    - acceptance
+
+- name: Create community subfolders on NFS
+  file:
+    name: "/mnt/nfs/{{item}}/community/public/uploads"
     state: directory
     owner: centos
     group: centos

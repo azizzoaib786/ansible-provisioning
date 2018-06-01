@@ -5,6 +5,7 @@ databases:
   - dev_backoffice
   - dev_bancos_mock
   - dev_comm_adapter
+  - dev_community
   - dev_idnow_mock
   - dev_onboarding
   - dev_seed_service
@@ -15,6 +16,7 @@ databases:
   - stg_backoffice
   - stg_bancos_mock
   - stg_comm_adapter
+  - stg_community
   - stg_idnow_mock
   - stg_onboarding
   - stg_seed_service
@@ -25,6 +27,7 @@ databases:
   - acc_backoffice
   - acc_bancos_mock
   - acc_comm_adapter
+  - acc_community
   - acc_idnow_mock
   - acc_onboarding
   - acc_seed_service
