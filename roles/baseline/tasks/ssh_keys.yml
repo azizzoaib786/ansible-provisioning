@@ -7,6 +7,7 @@
     - files/ssh/public_keys/bueno
     - files/ssh/public_keys/fagoaga
     - files/ssh/public_keys/faltin
+    - files/ssh/public_keys/grimme
     - files/ssh/public_keys/guiteras
     - files/ssh/public_keys/jenkins
     - files/ssh/public_keys/kobara
