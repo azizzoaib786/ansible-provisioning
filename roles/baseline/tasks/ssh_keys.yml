@@ -7,6 +7,7 @@
     - files/ssh/public_keys/bueno
     - files/ssh/public_keys/fagoaga
     - files/ssh/public_keys/faltin
+    - files/ssh/public_keys/fraundorfer
     - files/ssh/public_keys/grimme
     - files/ssh/public_keys/guiteras
     - files/ssh/public_keys/jenkins
@@ -14,6 +15,7 @@
     - files/ssh/public_keys/lopez
     - files/ssh/public_keys/marjanovic
     - files/ssh/public_keys/meyer
+    - files/ssh/public_keys/mujkic
     - files/ssh/public_keys/munteanu
     - files/ssh/public_keys/neumayr
     - files/ssh/public_keys/romagosa

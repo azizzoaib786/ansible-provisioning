@@ -4,11 +4,13 @@ docker01.fastlane-stage.fidor.cloud
 docker02.fastlane-stage.fidor.cloud
 docker01.fastlane.fidor.cloud
 docker02.fastlane.fidor.cloud
+docker01.fastlane-multi-dev.fidor.cloud
 
 [docker-swarm-master]
 docker01.fastlane-dev.fidor.cloud
 docker01.fastlane-stage.fidor.cloud
 docker01.fastlane.fidor.cloud
+docker01.fastlane-multi-dev.fidor.cloud
 
 [mysql]
 mysql01.fastlane-shared.fidor.cloud

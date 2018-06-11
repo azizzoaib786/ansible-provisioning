@@ -10,6 +10,17 @@ databases:
   - dev_onboarding
   - dev_seed_service
 
+  - dma_adapter
+  - dma_auth_service
+  - dma_banking
+  - dma_backoffice
+  - dma_bancos_mock
+  - dma_comm_adapter
+  - dma_community
+  - dma_idnow_mock
+  - dma_onboarding
+  - dma_seed_service
+
   - stg_adapter
   - stg_auth_service
   - stg_banking
