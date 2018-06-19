@@ -10,6 +10,7 @@
     - files/ssh/public_keys/fraundorfer
     - files/ssh/public_keys/grimme
     - files/ssh/public_keys/guiteras
+    - files/ssh/public_keys/ignacz
     - files/ssh/public_keys/jenkins
     - files/ssh/public_keys/kobara
     - files/ssh/public_keys/lopez
