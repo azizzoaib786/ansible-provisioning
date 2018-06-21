@@ -1,23 +1,39 @@
+- name: Add package source
+  yum:
+    name: http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
+    state: present
+
 - name: Install package
   package:
     name: "{{ item }}"
     state: present
   with_items:
-    - mariadb-server
+    - mysql-community-server
     - MySQL-python
 
 - name: Enable service
   systemd:
-    name: mariadb
+    name: mysqld
     enabled: true
     state: started
+
+- name: Allow root to login without password from localhost
+  shell: |
+    oldPassword=$(cat /var/log/mysqld.log | grep "A temporary password is generated for" | tail -1 | sed -n 's/.*root@localhost: //p')
+    newPassword='TempP@ssw0rd'
+    mysql --connect-expired-password -u root -p$oldPassword -Bse "ALTER USER 'root'@'localhost' IDENTIFIED BY '$newPassword';"
+    mysql --connect-expired-password -u root -p$newPassword -Bse "INSTALL PLUGIN auth_socket SONAME 'auth_socket.so';"
+    mysql --connect-expired-password -u root -p$newPassword -Bse "UNINSTALL PLUGIN validate_password;"
+    mysql --connect-expired-password -u root -p$newPassword -Bse "UPDATE mysql.user SET plugin = 'auth_socket', authentication_string = NULL WHERE host = 'localhost' and user = 'root'; FLUSH PRIVILEGES;"
+    echo 1 > /var/lib/mysql/.ansible-root-auth
+  args:
+    creates: /var/lib/mysql/.ansible-root-auth
 
 - name: Setup databases
   mysql_db:
     name: "{{ item }}"
     state: present
   with_items: "{{ databases }}"
-
 
 - name: Setup autotest user
   mysql_user:

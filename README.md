@@ -9,6 +9,19 @@ Although this is not an official part of the Fastlane product you can feel free 
 * The machine running ansible needs to have SSH access
 * The `centos` user on all hosts can use `sudo` without password
 
+## Development:
+
+The playbook can be tested with a local Vagrant machine:
+
+```shell
+$ vagrant up
+$ vagrant provision
+```
+
+> **Note**:
+>
+> Currently not all roles are supported yet since they hardcode the `centos` username which does not exist in Vagrant.
+
 ## Usage:
 
 ### Setup Ansible:
