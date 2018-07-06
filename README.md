@@ -41,7 +41,7 @@ $ yum install -y ansible     # On RHEL/Centos
 All changes can be applied with the following command:
 
 ```shell
-$ ansible-playbook -i hosts site.yml
+$ ansible-playbook -i hosts --user centos site.yml
 ```
 
 ### Execute one Command on multiple Hosts:
@@ -51,7 +51,7 @@ Ansible can execute so called ad-hock commands on multiple hosts in paralell.
 Example: Execute `docker ps` on all hosts in the **docker** group:
 
 ```shell
-$ ansible -i hosts docker -a 'docker ps'
+$ ansible -i hosts docker --user centos -a 'docker ps'
 ```
 
 [ansible]: https://github.com/ansible/ansible
