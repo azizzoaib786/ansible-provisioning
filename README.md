@@ -54,5 +54,17 @@ Example: Execute `docker ps` on all hosts in the **docker** group:
 $ ansible -i hosts docker --user centos -a 'docker ps'
 ```
 
+### SSH config
+
+Setup your ssh config to automatically use the `centos` user.
+
+```
+# ~/.ssh/config
+
+Host *fastlane*.fidor.cloud
+  User centos
+  # IdentityFile ~/.ssh/id_rsa_xxxx.prv # optional
+```
+
 [ansible]: https://github.com/ansible/ansible
 [wiki-aws]: https://github.fidor.de/fastlane/_internal/wiki/AWS
