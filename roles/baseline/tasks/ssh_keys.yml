@@ -20,6 +20,7 @@
     - files/ssh/public_keys/munteanu
     - files/ssh/public_keys/neumayr
     - files/ssh/public_keys/romagosa
+    - files/ssh/public_keys/seiler
     - files/ssh/public_keys/shihadeh
     - files/ssh/public_keys/yedes
 
