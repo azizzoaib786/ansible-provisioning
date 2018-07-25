@@ -10,6 +10,18 @@ databases:
   - dev_onboarding
   - dev_seed_service
 
+  - dip_adapter
+  - dip_auth_service
+  - dip_banking
+  - dip_backoffice
+  - dip_bancos_mock
+  - dip_comm_adapter
+  - dip_community
+  - dip_idnow_mock
+  - dip_onboarding
+  - dip_payment_gw
+  - dip_seed_service
+
   - dma_adapter
   - dma_auth_service
   - dma_banking
