@@ -38,10 +38,18 @@ $ yum install -y ansible     # On RHEL/Centos
 
 ### Execute the Provisioning:
 
+#### On the static inventory (`hosts` file in this repo)
+
 All changes can be applied with the following command:
 
 ```shell
 $ ansible-playbook -i hosts --user centos site.yml
+```
+
+#### On a dynamic set of hosts:
+
+```
+$ HOSTS=docker01.example.com GROUPS=docker,docker-swarm-master ansible-playbook --user=centos --inventory=bin/hosts_from_env site.yml
 ```
 
 ### Execute one Command on multiple Hosts:

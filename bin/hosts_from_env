@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+hosts  = ENV.fetch('HOSTS', '').split(',')
+groups = ENV.fetch('GROUPS', '').split(',')
+
+output = groups.map do |group|
+  [group, {hosts: hosts, vars: {}, children: []}]
+end
+
+puts Hash[output].to_json
