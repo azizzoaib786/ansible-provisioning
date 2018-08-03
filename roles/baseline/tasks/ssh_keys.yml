@@ -4,6 +4,7 @@
     key: "{{ item }}"
     state: present
   with_file:
+    - files/ssh/public_keys/agarwal
     - files/ssh/public_keys/bueno
     - files/ssh/public_keys/fagoaga
     - files/ssh/public_keys/faltin
@@ -20,8 +21,10 @@
     - files/ssh/public_keys/munteanu
     - files/ssh/public_keys/neumayr
     - files/ssh/public_keys/romagosa
+    - files/ssh/public_keys/savov
     - files/ssh/public_keys/seiler
     - files/ssh/public_keys/shihadeh
+    - files/ssh/public_keys/singh
     - files/ssh/public_keys/yedes
 
 - name: Add private key to centos user
