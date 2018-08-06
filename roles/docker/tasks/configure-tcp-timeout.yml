@@ -1,0 +1,5 @@
+- name: set persistant tcp_keepalive_time in sysctl
+  sysctl:
+    name: net.ipv4.tcp_keepalive_time
+    value: 300
+    reload: yes
