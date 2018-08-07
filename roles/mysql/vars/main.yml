@@ -1,4 +1,5 @@
 databases:
+  - dev_accounts_service
   - dev_adapter
   - dev_auth_service
   - dev_banking
@@ -10,6 +11,7 @@ databases:
   - dev_onboarding
   - dev_seed_service
 
+  - dip_accounts_service
   - dip_adapter
   - dip_auth_service
   - dip_banking
@@ -22,6 +24,7 @@ databases:
   - dip_payment_gw
   - dip_seed_service
 
+  - dma_accounts_service
   - dma_adapter
   - dma_auth_service
   - dma_banking
@@ -33,6 +36,7 @@ databases:
   - dma_onboarding
   - dma_seed_service
 
+  - stg_accounts_service
   - stg_adapter
   - stg_auth_service
   - stg_banking
@@ -44,6 +48,7 @@ databases:
   - stg_onboarding
   - stg_seed_service
 
+  - acc_accounts_service
   - acc_adapter
   - acc_auth_service
   - acc_banking
