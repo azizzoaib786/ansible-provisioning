@@ -7,6 +7,7 @@ databases:
   - dev_bancos_mock
   - dev_comm_adapter
   - dev_community
+  - dev_confirmable
   - dev_idnow_mock
   - dev_onboarding
   - dev_seed_service
@@ -19,6 +20,7 @@ databases:
   - dip_bancos_mock
   - dip_comm_adapter
   - dip_community
+  - dip_confirmable
   - dip_idnow_mock
   - dip_onboarding
   - dip_payment_gw
@@ -32,6 +34,7 @@ databases:
   - dma_bancos_mock
   - dma_comm_adapter
   - dma_community
+  - dma_confirmable
   - dma_idnow_mock
   - dma_onboarding
   - dma_seed_service
@@ -44,6 +47,7 @@ databases:
   - stg_bancos_mock
   - stg_comm_adapter
   - stg_community
+  - stg_confirmable
   - stg_idnow_mock
   - stg_onboarding
   - stg_seed_service
@@ -56,6 +60,7 @@ databases:
   - acc_bancos_mock
   - acc_comm_adapter
   - acc_community
+  - acc_confirmable
   - acc_idnow_mock
   - acc_onboarding
   - acc_seed_service
