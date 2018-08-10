@@ -6,6 +6,7 @@
   with_file:
     - files/ssh/public_keys/agarwal
     - files/ssh/public_keys/bueno
+    - files/ssh/public_keys/charkas
     - files/ssh/public_keys/fagoaga
     - files/ssh/public_keys/faltin
     - files/ssh/public_keys/fraundorfer
