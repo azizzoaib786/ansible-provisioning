@@ -39,19 +39,6 @@ databases:
   - dma_onboarding
   - dma_seed_service
 
-  - stg_accounts_service
-  - stg_adapter
-  - stg_auth_service
-  - stg_banking
-  - stg_backoffice
-  - stg_bancos_mock
-  - stg_comm_adapter
-  - stg_community
-  - stg_confirmable
-  - stg_idnow_mock
-  - stg_onboarding
-  - stg_seed_service
-
   - acc_accounts_service
   - acc_adapter
   - acc_auth_service

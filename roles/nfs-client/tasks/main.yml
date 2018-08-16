@@ -26,7 +26,6 @@
     group: centos
   with_items:
     - dev
-    - stage
     - acceptance
 
 - name: Create community subfolders on NFS
@@ -37,5 +36,4 @@
     group: centos
   with_items:
     - dev
-    - stage
     - acceptance
