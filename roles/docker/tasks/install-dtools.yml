@@ -7,7 +7,7 @@
 
 - name: Install dtools script
   get_url:
-    url: https://gist.githubusercontent.com/klausmeyer/c699828e178ffa6817ccd44f3f32dcda/raw/145be5cbe78f29ecd43748b4ee1b6f0636486959/dtools
+    url: https://gist.githubusercontent.com/klausmeyer/c699828e178ffa6817ccd44f3f32dcda/raw/a8f1d8f9b2b70512b767df53f5cc0e38b23145d8/dtools
     dest: /home/centos/bin/dtools
     owner: centos
     group: centos
