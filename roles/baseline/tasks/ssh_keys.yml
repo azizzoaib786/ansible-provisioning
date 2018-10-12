@@ -26,6 +26,7 @@
     - files/ssh/public_keys/seiler
     - files/ssh/public_keys/shihadeh
     - files/ssh/public_keys/singh
+    - files/ssh/public_keys/terziev
     - files/ssh/public_keys/vatseva
     - files/ssh/public_keys/yedes
 
